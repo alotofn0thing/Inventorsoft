@@ -1,10 +1,11 @@
 const calculate = (string) => {
 
-  let [first, operator, second] = string.split(' ');
+    if(typeof string !== string) return '';
 
- first = first.length;
-  
- second = second.length;
+    const [first, operator, second] = string.split(' ');
+
+    first = first.length;  
+    second = second.length;
   
   switch(operator){
       case '+':

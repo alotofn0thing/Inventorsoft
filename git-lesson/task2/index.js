@@ -1,8 +1,7 @@
 const calculate = (N) => {
-  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
-
   if (N < 0) return null;
-
+  
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
   const col = [];
 
   for (let i = 0; i < N; i++) {

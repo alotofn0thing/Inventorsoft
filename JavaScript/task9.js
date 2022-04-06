@@ -9,4 +9,10 @@
 // Аналог из lodash: http://lodash.com/docs#filter В новых браузерах у массивов есть метод filter.
 
 
-const filter = (arr, fn) => arr.filter(elem => fn(elem));
+const filter = (arr, func) => {
+    const res = [];
+    for (let item in arr) {
+        func(arr[item]) ? res.push(arr[item]) : null;
+    }
+    return res;
+};

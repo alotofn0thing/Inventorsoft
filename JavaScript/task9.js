@@ -8,6 +8,7 @@
 // console.log(input); // [1, 2, 3, 4, 5, 6]
 // Аналог из lodash: http://lodash.com/docs#filter В новых браузерах у массивов есть метод filter.
 
+<<<<<<< HEAD
 
 const filter = (arr, func) => {
     const res = [];
@@ -16,3 +17,7 @@ const filter = (arr, func) => {
     }
     return res;
 };
+=======
+...
+const filter = (arr, fn) => arr.filter(elem => fn(elem));
+>>>>>>> d114cfceaa37de5765e92de8ca44c1f5d86ce296
